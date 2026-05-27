@@ -1,0 +1,96 @@
+.corebanking {
+  background: #06101f;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.corebanking-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1.4fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.corebanking-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.corebanking-heading {
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #ffffff;
+}
+
+.corebanking-sub {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.corebanking-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  color: #ffffff;
+  background: #1d72f5;
+  padding: 13px 32px;
+  border-radius: 4px;
+  width: fit-content;
+  transition: background 0.2s, transform 0.15s;
+}
+.corebanking-btn-primary:hover {
+  background: #2f80f7;
+  transform: translateY(-2px);
+}
+
+.corebanking-learn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.2s, gap 0.2s;
+}
+.corebanking-learn:hover {
+  color: #fff;
+  gap: 10px;
+}
+
+.corebanking-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 420px;
+}
+
+.corebanking-img {
+  width: 100%;
+  min-height: 420px;
+  border-radius: 10px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+  display: block;
+  object-fit: contain;
+  object-position: left center;
+  background: #0b1628;
+}
+
+@media (max-width: 1024px) {
+  .corebanking { padding: 60px 40px; }
+  .corebanking-container { grid-template-columns: 1fr 1.2fr; gap: 48px; }
+}
+
+@media (max-width: 768px) {
+  .corebanking { padding: 60px 20px; }
+  .corebanking-container { grid-template-columns: 1fr; gap: 40px; }
+}

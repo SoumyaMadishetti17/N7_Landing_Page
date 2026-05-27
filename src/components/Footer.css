@@ -1,0 +1,231 @@
+.footer {
+    background: #031018;
+    padding: 90px 70px 40px;
+    overflow: hidden;
+  }
+  
+  .footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  /* =========================
+     TOP SECTION
+  ========================= */
+  
+  .footer-top {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+  
+    gap: 90px;
+  
+    align-items: start;
+  
+    margin-bottom: 90px;
+  }
+  
+  /* =========================
+     BIG N7 LOGO
+  ========================= */
+  
+  .footer-logo {
+    font-size: 250px;
+    line-height: 0.8;
+    font-weight: 700;
+  
+    letter-spacing: -14px;
+  
+    background: linear-gradient(
+      180deg,
+      #20d7ff 0%,
+      #005dff 100%
+    );
+  
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    opacity: 0.95;
+  }
+  
+  /* =========================
+     LOCATIONS
+  ========================= */
+  
+  .footer-locations {
+    display: grid;
+  
+    grid-template-columns:
+      220px
+      220px
+      220px;
+  
+    justify-content: space-between;
+  
+    column-gap: 55px;
+  
+    padding-top: 18px;
+  }
+  
+  .footer-location {
+    width: 220px;
+  }
+  
+  .footer-location h4 {
+    font-size: 18px;
+    font-weight: 500;
+  
+    color: #ffffff;
+  
+    margin-bottom: 18px;
+  }
+  
+  .footer-location p {
+    font-size: 15px;
+    line-height: 1.7;
+  
+    color: rgba(255, 255, 255, 0.56);
+  }
+  
+  /* =========================
+     LINKS SECTION
+  ========================= */
+  
+  .footer-links-wrap {
+    margin-left: 410px;
+  
+    display: grid;
+  
+    grid-template-columns:
+      220px
+      220px
+      180px;
+  
+    column-gap: 55px;
+  
+    align-items: start;
+  
+    margin-bottom: 90px;
+  }
+  
+  .footer-title {
+    font-size: 18px;
+    font-weight: 500;
+  
+    color: #ffffff;
+  
+    margin-bottom: 28px;
+  }
+  
+  .footer-links-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .footer-links-col a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    text-decoration: none;
+  
+    font-size: 15px;
+    line-height: 1.2;
+  
+    color: rgba(255, 255, 255, 0.58);
+  
+    transition: 0.3s ease;
+  }
+  
+  .footer-links-col a span {
+    color: #00a3ff;
+    font-size: 18px;
+  }
+  
+  .footer-links-col a:hover {
+    color: #ffffff;
+  }
+  
+  /* =========================
+     COPYRIGHT
+  ========================= */
+  
+  .footer-bottom {
+    margin-left: 410px;
+  
+    max-width: 780px;
+  
+    font-size: 13px;
+    line-height: 1.2;
+  
+    color: rgba(255, 255, 255, 0.24);
+  }
+  
+  /* =========================
+     RESPONSIVE
+  ========================= */
+  
+  @media (max-width: 1100px) {
+  
+    .footer {
+      padding: 80px 40px 40px;
+    }
+  
+    .footer-top {
+      grid-template-columns: 1fr;
+      gap: 70px;
+    }
+  
+    .footer-logo {
+      font-size: 220px;
+      letter-spacing: -12px;
+    }
+  
+    .footer-locations {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  
+    .footer-links-wrap {
+      margin-left: 0;
+  
+      grid-template-columns: 1fr 1fr;
+  
+      gap: 60px;
+    }
+  
+    .footer-bottom {
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+  
+    .footer {
+      padding: 70px 20px 40px;
+    }
+  
+    .footer-logo {
+      font-size: 160px;
+      letter-spacing: -8px;
+    }
+  
+    .footer-links-wrap {
+      grid-template-columns: 1fr;
+      gap: 50px;
+    }
+  
+    .footer-location h4,
+    .footer-title {
+      font-size: 17px;
+    }
+  
+    .footer-location p,
+    .footer-links-col a {
+      font-size: 14px;
+    }
+  
+    .footer-bottom {
+      font-size: 12px;
+    }
+  }

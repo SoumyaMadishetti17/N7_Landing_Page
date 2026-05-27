@@ -1,0 +1,291 @@
+.insights {
+    background: #031018;
+    padding: 120px 80px;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+  }
+  
+  .insights-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 90px;
+  
+    align-items: flex-start;
+  }
+  
+  /* ========================
+     LEFT
+  ======================== */
+  
+  .insights-left {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+  }
+  
+  .insights-heading {
+    font-size: clamp(38px, 4vw, 62px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+    font-weight: 600;
+  
+    color: #ffffff;
+  
+    max-width: 420px;
+  }
+  
+  .insights-btn {
+    width: 140px;
+    height: 54px;
+  
+    border-radius: 14px;
+  
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  
+    background: transparent;
+    color: white;
+  
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+  
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .insights-btn:hover {
+    background: white;
+    color: black;
+  }
+  
+  /* ========================
+     RIGHT
+  ======================== */
+  
+  .insights-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+  
+  /* ========================
+     FEATURED CARD
+  ======================== */
+  
+  .insight-card-featured {
+    background: #081821;
+  
+    border-radius: 24px;
+  
+    padding: 20px;
+  
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 26px;
+  
+    border: 1px solid rgba(255, 255, 255, 0.03);
+  }
+  
+  /* LEFT PATTERN */
+  .insight-pattern {
+    background: #0c1f52;
+  
+    border-radius: 18px;
+  
+    padding: 26px;
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .pattern-box {
+    width: 74px;
+    height: 74px;
+  
+    border-radius: 20px;
+  
+    background: #00a3ff;
+  
+    opacity: 0.95;
+  }
+  
+  /* RIGHT CONTENT */
+  .insight-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .insight-tag {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  
+    color: #00a3ff;
+  
+    margin-bottom: 18px;
+  }
+  
+  .insight-title {
+    font-size: 42px;
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+    font-weight: 500;
+  
+    color: white;
+  
+    max-width: 420px;
+  
+    margin-bottom: 22px;
+  }
+  
+  .insight-meta {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.45);
+  
+    margin-bottom: 28px;
+  }
+  
+  .read-more-btn {
+    width: 210px;
+    height: 52px;
+  
+    border-radius: 14px;
+  
+    border: 1px solid rgba(255, 255, 255, 0.16);
+  
+    background: transparent;
+    color: rgba(255, 255, 255, 0.75);
+  
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+  
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background: white;
+    color: black;
+  }
+  
+  /* ========================
+     SMALL GRID
+  ======================== */
+  
+  .insight-small-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  
+  .insight-card-small {
+    background: #081821;
+  
+    border-radius: 24px;
+  
+    padding: 34px 30px;
+  
+    min-height: 290px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+    border: 1px solid rgba(255, 255, 255, 0.03);
+  }
+  
+  .insight-small-title {
+    font-size: 32px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    font-weight: 500;
+  
+    color: white;
+  
+    margin-bottom: 20px;
+  }
+  
+  /* ========================
+     FOOTER LINK
+  ======================== */
+  
+  .insights-footer-link {
+    display: flex;
+    justify-content: flex-end;
+  
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+  
+    color: #00a3ff;
+  
+    cursor: pointer;
+  }
+  
+  /* ========================
+     RESPONSIVE
+  ======================== */
+  
+  @media (max-width: 1024px) {
+    .insights {
+      padding: 100px 40px;
+    }
+  
+    .insights-container {
+      grid-template-columns: 1fr;
+      gap: 60px;
+    }
+  
+    .insight-card-featured {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .insights {
+      padding: 80px 20px;
+    }
+  
+    .insight-small-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .insight-title {
+      font-size: 34px;
+    }
+  
+    .insight-small-title {
+      font-size: 28px;
+    }
+  
+    .read-more-btn {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .insights-heading {
+      font-size: 36px;
+    }
+  
+    .insight-title {
+      font-size: 30px;
+    }
+  
+    .insight-small-title {
+      font-size: 24px;
+    }
+  
+    .pattern-box {
+      width: 58px;
+      height: 58px;
+    }
+  }
